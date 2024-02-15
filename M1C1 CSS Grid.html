@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M1C1 CSS Grid</title>
+    <script src="https://kit.fontawesome.com/9f21c852ec.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+
+   <style>
+    
+    .gridOne {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gridTwo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    .gridThree {
+        width: 500px;
+        height: 300px;
+        display: grid;
+        grid-template-rows: 1fr 3fr;
+    }
+    
+    .gridD {
+        background-color: blueviolet;
+    }
+
+    .gridE img {
+        width: 500px;
+        height: 225px;
+        object-fit:cover;
+        background-color: aqua;
+    }
+    
+    .gridFour {
+       display: grid; 
+       grid-template-rows: 1fr 1fr;
+       width: 500px;
+       background-color: darkgreen;
+    }
+
+    #Hardwork {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gridFive {
+       display: grid; 
+       grid-template-rows: 1fr 1fr;
+       width: 500px;
+    }
+    
+    .gridG img {
+        width: 200px;
+        height: 200px;
+        object-fit:cover; 
+    }
+
+    .gridSix {
+        width: 500px;
+        background-color: lightgray;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    
+    .gridSix p {
+        font-family: 'Protest Riot', sans-serif;
+    }
+   </style> 
+</head>
+<body>
+    <div class="gridOne">
+        <p>Hello World</p>
+        <p style="color: blue">My Fantastic Content </p>
+    </div>
+
+    <div class="gridTwo">
+        <div class="gridA">
+            <p style="background-color: red;">HTML</p>
+        </div>
+
+        <div class="gridB">
+            <p style="background-color: blue;">CSS</p>
+        </div>
+
+        <div class="gridC">
+            <p style="background-color: yellow;">SCSS</p>
+        </div>
+    </div>
+
+    <div class="gridThree">
+        <div class="gridD">
+            <p>Caribbean beaches are awesome</p>
+        </div>
+
+        <div class="gridE">
+            <img src="images/Beach.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="gridFour">
+        <div class="gridF">
+            <p>Grid and Flex complement each other</p>
+        </div>
+
+        <div id="Hardwork">
+            <p>Coding</p>
+            <p>Perseverance</p>
+        </div>
+    </div>
+
+    <div class="gridFive">
+        <div class="gridF">
+            <p>Grid and Flex complement each other</p>
+        </div>
+
+        <div class="gridG">
+           <img src="images/Fall.jpg" alt="Fall">
+           <img src="images/Spring.jpg" alt="Spring">
+        </div>
+    </div>
+
+    <div class="gridSix">
+        <i class="fa-regular fa-snowflake"></i>
+        <p>Do it now. Sometimes "later" becomes "never".</p>
+    </div>
+</body>
+</html>
